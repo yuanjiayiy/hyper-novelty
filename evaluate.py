@@ -91,5 +91,6 @@ def evaluate(G, edge_time, thetas):
                         "auc": AUC,
                         "auc_std": std_AUC,
                         "repeated_edges": repeated_edges})
+    print(res)
     return res
 
