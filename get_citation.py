@@ -198,11 +198,11 @@ def get_citation(arxiv_id):
 
 if __name__ == "__main__":
     # Example: Semantic Scholar by corpus_id or arXiv ID
-    for pid in ["000194903cb83bd4af714f950d0266382e2772fc"]:
+    for pid in ["ffe9482f111067c5a76703463624dbe885f966a3"]:
         print(f"\n--- {pid} ---")
         try:
             total, by_year, pub_year = get_citation_s2(pid)
             print(f"Total citations: {total}, publication year: {pub_year}")
             print("Citations by year:", by_year)
         except Exception as e:
-            print(f"Error: {e}")
+            raise Exception(f"Error: {e}")
